@@ -1,0 +1,36 @@
+.carousel-root{
+  width : 100%;
+  height : 36px;
+  background-color:transparent;
+}
+.carousel.carousel-slider{
+  overflow: visible;
+  display: flex;
+  justify-items: space-between;
+  border-radius: 0px;
+}
+
+.carousel .control-next.control-arrow:before{
+  position: absolute;
+  right: 2px;
+  transform: translateY(-50%);
+}
+.carousel .control-prev.control-arrow:before{
+  position: absolute;
+  left: 2px;
+  transform: translateY(-50%);
+}
+.carousel .control-arrow{
+  width: 50%;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: transparent;
+  align-items: center;
+}
+.carousel .slider-wrapper{
+  align-items: center ;
+  display : flex;
+  height: 36px;
+}
+

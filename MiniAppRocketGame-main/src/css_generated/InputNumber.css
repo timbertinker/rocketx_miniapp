@@ -1,0 +1,21 @@
+
+.input-number-parent .input-number {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.input-number-parent .input-number::-webkit-inner-spin-button, .input-number-parent .input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+/* .input-number-parent .input-number-arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 10px;
+} */
+/* .input-number-parent .input-number-arrow-up {
+  top: 8px;
+}
+.input-number-parent .input-number-arrow-down {
+  bottom: 8px;
+} */

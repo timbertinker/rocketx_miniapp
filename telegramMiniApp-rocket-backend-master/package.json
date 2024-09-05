@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes256": "^1.1.0",
+    "axios": "^1.7.4",
+    "bitcoin-transaction": "^1.2.1",
+    "bitcoinjs-lib": "^6.1.6",
+    "body-parse": "^0.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "elliptic": "^6.5.7",
+    "express": "^4.19.2",
+    "js-sha256": "^0.11.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.3",
+    "morgan": "^1.10.0",
+    "node-dom": "^0.1.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "ripemd160": "^2.0.2",
+    "secure-random": "^1.1.2",
+    "url": "^0.11.4",
+    "websocket": "^1.0.35"
+  },
+  "description": "",
+  "type": "module"
+}

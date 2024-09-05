@@ -1,0 +1,43 @@
+#profile-support *:not(.error-label) {
+  display: block;
+}
+#profile-support .profile-text {
+  margin: 23px 0;
+}
+#profile-support .profile-label {
+  margin-left: 5px;
+}
+#profile-support input {
+  width: 100%;
+  max-width: 250px;
+  margin: 12px 0;
+}
+#profile-support textarea {
+  margin: 12px 0;
+  width: 100%;
+  height: 139px;
+  box-sizing: border-box;
+  border: 1px solid #D7C7F1;
+  padding: 12px;
+  color: #141d71;
+  font-size: 14px;
+}
+#profile-support textarea:hover {
+  border: 1px solid #645BF8;
+}
+#profile-support textarea:focus {
+  border: 2px solid #645BF8;
+  outline: none;
+}
+#profile-support .button-outlined {
+  margin-top: 18px;
+}
+
+@media (max-width: 635px) {
+  #profile-support input {
+    max-width: 100%;
+  }
+  #profile-support .button-outlined {
+    margin-bottom: 18px;
+  }
+}

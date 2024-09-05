@@ -1,0 +1,95 @@
+#header {
+  display: grid;
+  align-items: center;
+  padding: 16px 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#header #header-mobile-menu-modal {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: #001AFF;
+  background: linear-gradient(135deg, rgb(2, 0, 36) 0%, rgb(0, 26, 255) 100%);
+  margin: 0;
+  border: 0;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+}
+#header #header-mobile-menu-modal img {
+  display: block;
+  margin-bottom: 32px;
+  width: 160px;
+}
+#header #header-mobile-menu-modal a {
+  display: block;
+  color: white;
+  margin-bottom: 24px;
+}
+#header #header-mobile-menu-modal .close:before, #header #header-mobile-menu-modal .close:after {
+  background-color: white;
+  height: 34px;
+  left: 16px;
+  top: 0;
+}
+#header #header-mobile-menu-modal .divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 8px 0 32;
+}
+#header a {
+  color: #D7C7F1;
+}
+#header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+#header #header-center {
+  justify-self: center;
+  margin-top: 16px;
+}
+#header #header-center a:first-child {
+  margin: 0 16px 0 0;
+}
+#header #header-center a:last-child {
+  margin: 0 0 0 16px;
+}
+#header #header-center a:nth-child(n) {
+  margin: 0px 16px;
+}
+#header #header-right {
+  justify-self: right;
+  margin-top: 16px;
+  color: white;
+}
+#header #header-mobile-menu {
+  display: none;
+  justify-self: right;
+  margin-top: 8px;
+  height: 34px;
+}
+#header #header-user-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  margin-bottom: -4px;
+}
+#header #header-logout {
+  cursor: pointer;
+}
+
+@media (max-width: 1051px) {
+  #header {
+    padding: 16px;
+  }
+}
+@media (max-width: 635px) {
+  #header {
+    grid-template-columns: 1fr 1fr;
+  }
+  #header #header-center, #header #header-right {
+    display: none;
+  }
+  #header #header-mobile-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,307 @@
+
+@keyframes flying {
+  0% {
+    background-position-y: 233.33%;
+  }
+  33.34% {
+    background-position-y: 200%;
+  }
+  66.67% {
+    background-position-y: 166.67%;
+  }
+  100% {
+    background-position-y: 133.33%;
+  }
+}
+body {
+  margin: 0px;
+  
+  font-size: 14px;
+  line-height: 24px;
+  color: #141d71;
+}
+body .title {
+  font-size: 16px;
+}
+body a {
+  text-decoration: none;
+}
+body #react-app {
+  height: 100%;
+}
+body #react-app > div:nth-child(3) {
+  min-height: calc(100% - 179px);
+  margin-bottom: -16px;
+}
+body #react-app .error-label {
+  color: red;
+  margin-left: 5px;
+}
+body #react-app input:not([type=checkbox]) {
+  color: #141d71;
+  font-size: 16px;
+  border: 1px solid #D7C7F1;
+  background: #FFFFFF;
+  padding-left: 7px;
+  padding-right: 7px;
+  height: 36px;
+}
+body #react-app input:not([type=checkbox]):hover {
+  border: 1px solid #645BF8;
+}
+body #react-app input:not([type=checkbox]):focus {
+  border: 2px solid #645BF8;
+  outline: none;
+}
+body  button {
+  font-size: 24px;
+  color: #FFFFFF;
+  height: 48px;
+  box-shadow: 0px 4px 6px rgba(100, 91, 248, 0.15);
+  border: none;
+  border-radius: 0px;
+  background: #645BF8;
+  padding: 0 18px;
+  border-radius: 12px;
+  width: 100%;
+}
+body #react-app button:hover {
+  background: #5a52df;
+  cursor: pointer;
+}
+body #react-app button:active {
+  background: #746bf9;
+  outline: none;
+}
+body #react-app button:disabled {
+  background: #d2e0ff;
+  color: #aec0e8;
+}
+body #react-app button:focus {
+  outline: none;
+}
+body #react-app .page-background {
+  position: relative;
+  background: #FFFFFF;
+  width: 61.803%;
+  box-sizing: border-box;
+  margin: 16px auto 40px;
+  padding: 32px;
+  box-shadow: 0px 0px 12px rgba(100, 91, 248, 0.15);
+}
+body #react-app .page-background a, body #react-app .page-background a:visited {
+  color: #18A0FB;
+}
+body #react-app .page-background a:hover {
+  color: #5a52df;
+  text-decoration: underline;
+}
+body #react-app .page-background h1 {
+  color: #141d71;
+  font-size: 28px;
+  font-family: Avenir;
+  display: block;
+  margin: 0 0 32px;
+  font-weight: bold;
+  line-height: 35px;
+}
+body #react-app .page-background .page-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 28px auto 0;
+}
+body #react-app .page-background .page-flexbox > * {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+body #react-app .page-background .page-flexbox button {
+  height: 48px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+body #react-app .page-background .page-flexbox input:not([type=checkbox]) {
+  height: 36px;
+  width: 100%;
+}
+body #react-app .page-background .page-flexbox span {
+  font-size: 14px;
+}
+body #react-app .page-background .page-flexbox .page-flexbox-title {
+  margin-left: 5px;
+  font-weight: bold;
+}
+body #react-app .page-background .page-flexbox .page-flexbox-text {
+  color: #606060;
+  text-align: center;
+}
+body #react-app .page-background .page-horizontal-flexbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body #react-app .page-background .page-horizontal-flexbox > div:nth-child(1) {
+  width: 228px;
+  padding-right: 28px;
+}
+body #react-app .page-background .page-horizontal-flexbox > div:nth-child(1) > a {
+  margin-bottom: 24px;
+  display: block;
+}
+body #react-app .page-background .page-horizontal-flexbox > div:nth-child(2) {
+  width: 100%;
+  max-width: 728px;
+  padding-left: 28px;
+  border-left: 1px solid #D7C7F1;
+}
+body #react-app .page-background .page-horizontal-flexbox > div:nth-child(2) > h3 {
+  margin-top: 0;
+}
+body #react-app .grid-rank {
+  line-height: 48px;
+  border: 1px solid #18A0FB;
+  text-align: center;
+}
+body #react-app .grid-rank div:nth-child(2) {
+  background: #756CFF;
+  color: white;
+  font-size: 22px;
+}
+body #react-app #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+body #react-app .modal {
+  position: fixed;
+  display: none;
+  z-index: 2;
+  width: 400px;
+  background: white;
+  padding: 16px;
+  margin-left: -216px;
+  left: 50%;
+  box-shadow: 0px 0px 12px rgba(100, 91, 248, 0.15);
+}
+body #react-app .modal a, body #react-app .modal a:visited {
+  color: #18A0FB;
+}
+body #react-app .modal a:hover {
+  color: #5a52df;
+  text-decoration: underline;
+}
+body #react-app .modal h2, body #react-app .modal h3 {
+  margin-top: 0 !important;
+}
+body #react-app .modal .modal-button {
+  font-size: 20px;
+  background: #645BF8;
+  color: #ffffff !important;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(100, 91, 248, 0.15);
+  padding: 12px 18px;
+  width: fit-content;
+  float: right;
+}
+body #react-app .modal .modal-button:hover {
+  background: #5a52df;
+  text-decoration: none;
+}
+body #react-app .modal .modal-cancel-button {
+  padding: 0 12px;
+  border: 1px solid #645BF8;
+  color: #645BF8;
+  background: none;
+  font-size: 16;
+  margin: 0;
+  box-shadow: none;
+}
+body #react-app .modal .modal-cancel-button:hover {
+  background: #5a52df;
+  color: #fff;
+  border: 0;
+}
+body #react-app .modal .message {
+  margin-bottom: 16px;
+}
+body #react-app .modal .close {
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  width: 34px;
+  height: 34px;
+  opacity: 0.3;
+  z-index: 10;
+}
+body #react-app .modal .close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+body #react-app .modal .close:before, body #react-app .modal .close:after {
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #333;
+}
+body #react-app .modal .close:before {
+  transform: rotate(45deg);
+}
+body #react-app .modal .close:after {
+  transform: rotate(-45deg);
+}
+body #react-app .gif-loader {
+  position: absolute;
+  height: 67.5%;
+  margin-top: 7px;
+  margin-left: -21.59px;
+  left: 50%;
+}
+
+@media (max-width: 1051px) {
+  body {
+    min-width: 100% !important;
+  }
+  body .page-background {
+    width: 90% !important;
+  }
+  body .page-background .page-horizontal-flexbox > div:nth-child(1) > a {
+    margin-bottom: 8px !important;
+  }
+  body .modal {
+    width: 320px !important;
+    margin-left: -176px !important;
+  }
+  body .modal-menu {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 635px) {
+  body #react-app .page-background {
+    padding: 24px 16px;
+  }
+  body #react-app .page-background .page-flexbox {
+    width: 90%;
+  }
+  body #react-app .page-background .page-horizontal-flexbox {
+    flex-direction: column;
+    margin: 0;
+  }
+  body #react-app .page-background .page-horizontal-flexbox > div {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-left: 0 !important;
+  }
+  body #react-app .page-background .page-horizontal-flexbox > div:nth-child(2) {
+    margin-top: 24px;
+  }
+  .profile-table {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+}

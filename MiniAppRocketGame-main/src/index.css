@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BadaBoom&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+
+  /* max-width: 500px; */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1e8;
+  opacity: 0.5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.shadow-btn-blue-border {
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #4444E0 100%);
+  /* border-image-slice: 1; This ensures the gradient covers the border */
+  border-width: 1px;
+  /* Adjust this if you want a different border width */
+}
+
+.shadow-btn-red-border {
+  border-image-source: linear-gradient(180deg, #FFFFFF00 0%, #EA2F32 100%);
+  border-width: 1px;
+  /* Adjust this if you want a different border width */
+}
+
+.shadow-btn-lightblue-border {
+  border-image-source: linear-gradient(180deg, #FFFFFF00 0%, #4444E0 100%);
+  border-width: 1px;
+  /* Adjust this if you want a different border width */
+}
+
+.shadow-btn-custom-border {
+  border-image-source: linear-gradient(180deg, #FFFFFF00 0%, #cccccc 100%);
+  border-width: 1px;
+  /* Adjust this if you want a different border width */
+}
+
+.invite-btn-shadow {
+  box-shadow: 0px 2px 0px 0px #191998;
+}
+
+.invite-btn-setting {
+  box-shadow: 0px 2px 0px 0px #cccccc;
+}
+
+.invite-btn-red-shadow {
+  box-shadow: 0px 2px 0px 0px #A70C0E;
+}
+
+.score-position {
+  position: absolute;
+  top: 15%;
+}
+
+@media screen and (max-height: 620px) {
+  .score-position {
+    right: 20%;
+    top: 30%
+  }
+}

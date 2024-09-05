@@ -1,0 +1,3 @@
+#ranking .profile-table {
+  grid-template-columns: 54px 1fr 1fr 1fr 1fr 1fr;
+}

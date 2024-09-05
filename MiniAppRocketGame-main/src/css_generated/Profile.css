@@ -1,0 +1,100 @@
+#profile #profile-menu-button-mobile, #ranking #profile-menu-button-mobile {
+  display: none;
+}
+#profile h1, #ranking h1 {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 24px;
+}
+#profile h2, #ranking h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+#profile .profile-table, #ranking .profile-table {
+  display: grid;
+  width: 100%;
+  margin-top: 24px;
+  border: 1px solid #d8cbf4;
+}
+#profile .profile-table div, #ranking .profile-table div {
+  padding: 0 12px;
+  position: relative;
+}
+#profile .profile-table .profile-table-header, #ranking .profile-table .profile-table-header {
+  background: #141d71;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+  height: 40px;
+}
+#profile .profile-table div:not(.profile-table-header), #ranking .profile-table div:not(.profile-table-header) {
+  line-height: 34px;
+  min-height: 34px;
+}
+#profile .profile-table .odd, #ranking .profile-table .odd {
+  background: #f0f1ff;
+}
+#profile .button-outlined, #ranking .button-outlined {
+  font-size: 14px;
+  height: 36px;
+  line-height: 32px;
+  border: 1px solid #2C41FF;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: white;
+  margin: 18px 0;
+  color: #2C41FF;
+}
+#profile .button-outlined:hover, #ranking .button-outlined:hover {
+  background: #5a52df;
+  border: 0;
+  color: #fff;
+}
+#profile .button-outlined:active, #ranking .button-outlined:active {
+  background: #746bf9;
+}
+
+@media (max-width: 635px) {
+  #profile #profile-menu-modal-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 0;
+    background: #001AFF;
+    font-size: 24px;
+  }
+  #profile #profile-menu-modal-mobile img {
+    display: block;
+    margin-bottom: 32px;
+    width: 160px;
+  }
+  #profile #profile-menu-modal-mobile a {
+    display: block;
+    color: white;
+    margin-bottom: 24px;
+  }
+  #profile #profile-menu-modal-mobile .close:before, #profile #profile-menu-modal-mobile .close:after {
+    background-color: white;
+    height: 34px;
+    left: 16px;
+    top: 0;
+  }
+  #profile .page-background #profile-menu-button-mobile {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    height: 29px;
+  }
+  #profile .page-background .page-horizontal-flexbox > :nth-child(1) {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+body #react-app .pagination-buttons button {
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+  border: 1px solid #2C41FF;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2C41FF;
+  background-color: white;
+  padding: 0;
+  margin-right: 4px;
+  margin-top: 24px;
+}
+body #react-app .pagination-buttons button.current {
+  color: white;
+  background-color: #756CFF;
+}
+body #react-app .pagination-buttons button.disabled {
+  background-color: rgba(118, 108, 255, 0.1176470588);
+  border-color: rgba(44, 65, 255, 0.3137254902);
+}
+body #react-app .pagination-buttons button:hover:not(.current) {
+  background-color: rgba(117, 108, 255, 0.3137254902);
+  color: white;
+}
+body #react-app .pagination-buttons span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2C41FF;
+  height: 25px;
+  width: 25px;
+  margin-right: 4px;
+  margin-top: 24px;
+}

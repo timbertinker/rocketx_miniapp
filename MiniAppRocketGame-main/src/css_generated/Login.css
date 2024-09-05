@@ -1,0 +1,19 @@
+#login #login-grid input:not([type=checkbox]) {
+  height: 32px;
+  width: 100%;
+}
+#login #login-grid button {
+  background: #645BF8;
+  font-size: 24px;
+  color: #FFFFFF;
+  height: 32px;
+}
+#login #login-grid > span:nth-child(odd) {
+  align-self: center;
+}
+
+@media (max-width: 635px) {
+  #login #login-grid {
+    width: 100%;
+  }
+}

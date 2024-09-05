@@ -1,0 +1,135 @@
+#game {
+  position: relative;
+}
+#game #game-toggle {
+  width: 149px;
+  margin: 24px auto 0px;
+  color: #FFFFFF;
+}
+#game #game-toggle > span.selected {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#game #game-toggle .switch {
+  transform: translateY(-13px);
+}
+#game #game-toggle > span {
+  color: #D7C7F1;
+  line-height: 32px;
+}
+#game #game-toggle > span:hover {
+  cursor: pointer;
+}
+#game #game-rocket {
+  display: block;
+  position: absolute;
+  width: 64px;
+  left: 50%;
+}
+#game #game-rocket.active, #game #game-rocket.inactive {
+  width: 64;
+  margin-left: -32px;
+  bottom: 10px;
+}
+#game #game-rocket.explosed {
+  width: 140px;
+  height: 140px;
+  left: 50%;
+  top:50%;
+  margin-left: -32px;
+}
+#game .shaking {
+  animation: shake 3s infinite ease-in-out both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(6px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-12px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(12px, 0, 0);
+  }
+}
+#game #game-gauge.left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 100%;
+  color: #FFFFFF;
+}
+#game #game-gauge.right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 48px;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+#game #game-gauge div {
+  position: absolute;
+  border-top: 1px solid white;
+}
+
+#game #game-gauge.right div {
+  right: 15px;
+}
+
+#game #game-gauge.left div {
+  left: 15px;
+}
+
+#game #game-gauge div span {
+  color: white;
+  position: absolute;
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
+  right: 15px;
+  top: -11px;
+}
+
+#game #game-gauge.left div span {  
+  right: 15px;
+}
+
+#game #game-gauge.right div span {
+  left: 15px;
+}
+
+#game #game-gauge .game-gauge-wide {
+  width: 12px;
+}
+#game #game-gauge .game-gauge-narrow {
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#game #game-current-result {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 53px;
+}
+#game #game-comment {
+  font-size: 40px;
+  color: #FAD557;
+  text-shadow: 2px 2px #E2395A;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 16px;
+}

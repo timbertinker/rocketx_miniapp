@@ -1,0 +1,7 @@
+#registration #registration-agreement {
+  display: flex;
+  flex-direction: row;
+}
+#registration button {
+  width: 100%;
+}

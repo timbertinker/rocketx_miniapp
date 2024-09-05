@@ -1,0 +1,27 @@
+#profile-security-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 24px;
+}
+#profile-security-grid div > *:not(.error-label) {
+  display: block;
+}
+#profile-security-grid .profile-security-grid-label {
+  font-size: 14px;
+  margin: 12px 0;
+  margin-left: 5px;
+}
+#profile-security-grid input {
+  width: 100%;
+  max-width: 250px;
+  margin: 12px 0;
+}
+
+@media (max-width: 635px) {
+  #profile-security-grid {
+    grid-template-columns: 1fr;
+  }
+  #profile-security-grid input {
+    max-width: 100%;
+  }
+}

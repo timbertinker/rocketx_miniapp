@@ -1,0 +1,36 @@
+#profile-withdraw span {
+  display: block;
+}
+#profile-withdraw .profile-text {
+  margin: 24px 0;
+}
+#profile-withdraw .profile-label {
+  margin: 12px 0;
+  margin-left: 5px;
+}
+#profile-withdraw .button-outlined {
+  display: block;
+  margin: 18px 0 24px;
+}
+#profile-withdraw .input-number-parent {
+  height: 36px;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 12px 0;
+}
+#profile-withdraw > input {
+  width: 250px;
+}
+#profile-withdraw .profile-table {
+  grid-template-columns: 100px auto 180px;
+}
+
+@media (max-width: 635px) {
+  #profile-withdraw > input {
+    width: 100%;
+  }
+  #profile-withdraw .input-number-parent {
+    max-width: 100%;
+  }
+}
